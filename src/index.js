@@ -23,15 +23,11 @@ app.register(import('@fastify/static'), {
 })
 
 app.get('/', (req,res)=>{
-    res.view('views/index.ejs')
-    //res.sendFile(path.join(__dirname, '..','views','index.html'))
+    res.view('views/index.ejs')   
 })
 
 app.get('/register', (req, res) => {
-     res.view('views/register.ejs')
-
-   // const register = database.list()
-    //return register
+     res.view('views/register.ejs') 
 })
 
 app.post('/register',(req,res)=>{
